@@ -1,11 +1,8 @@
-<template>
-  <v-app>
-    <Header />
-
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+<template lang="pug">
+  v-app
+    Header
+    v-main
+      router-view
 </template>
 
 <script>
