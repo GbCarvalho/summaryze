@@ -2,16 +2,21 @@
   v-card.fill-height.fill-width(color="purple lighten-5")
     v-container.d-flex(max-width="1440px")
       v-row
+        card
+        card
+        card
+        card
+
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
+import Card from "@/components/Card";
 
 export default {
   name: "Home",
 
   components: {
-    HelloWorld,
+    Card,
   },
 };
 </script>
