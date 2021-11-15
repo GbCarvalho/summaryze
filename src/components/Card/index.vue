@@ -7,9 +7,21 @@
       v-card-subtitle Gabriel Carvalho
         v-icon.text--sencondary.ml-1(size="16") mdi-account-outline
       v-card-text Um texto gigante explicando 1bi de coisa que a gente vai precisar futuramente estará presente bem aqui, o que devo fazer??
+      v-divider.mx-4
+      v-card-title Links úteis
+      v-card-text
+        v-chip-group(column)
+          custom-chip(plataform="Github" link="https://github.com")
+          custom-chip(plataform="Slack" link="https://github.com")
 
 </template>
 
 <script>
-export default {};
+import CustomChip from "./Chip.vue";
+
+export default {
+  components: {
+    CustomChip,
+  },
+};
 </script>
