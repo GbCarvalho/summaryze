@@ -1,7 +1,7 @@
 <template lang="pug">
   v-chip.align-center.purple.lighten-5(:href="link" target="_blank")
-    v-icon(small) mdi-{{plataform.toLowerCase()}}
-    v-chip-text.ml-1 {{plataform}}
+    v-icon(small).mr-1 mdi-{{plataform.toLowerCase()}}
+    slot
     v-icon.ml-1(small) mdi-open-in-new
 </template>
 
